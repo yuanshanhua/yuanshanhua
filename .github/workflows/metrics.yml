@@ -12,7 +12,7 @@ jobs:
       - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           # ── Global settings ──
           template: classic
           config_timezone: Asia/Shanghai
